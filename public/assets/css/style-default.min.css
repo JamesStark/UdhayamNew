@@ -1,3 +1,13 @@
+@font-face {
+  font-family:"BlowBrush";
+  src:url("../libs/fonts/blowbrush.eot") format("eot"),
+  url("../libs/fonts/blowbrush.woff") format("woff"),
+  url("../libs/fonts/blowbrush.ttf") format("truetype"),
+  url("../libs/fonts/blowbrush.svg") format("svg");
+  font-weight:normal;
+  font-style:normal;
+}
+
 @charset "UTF-8";
 a,
 a.active,
@@ -8881,7 +8891,7 @@ button:hover:after {
 .sponsors-area .single:hover {
   opacity: 1;
 }
-.sponsors-area .single:hover a img {
+.sponsors-area .single:hover a h4 {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
   -webkit-transform-origin: center;
@@ -8889,6 +8899,13 @@ button:hover:after {
   animation-duration: 0.4s;
   animation-timing-function: linear;
 }
+.events h4 {
+  font-family: 'BlowBrush', sans-serif;
+  font-size: 30px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
 .sponsors-area-col3 .single {
   width: 32%;
 }
