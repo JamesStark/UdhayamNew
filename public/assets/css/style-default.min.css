@@ -8904,8 +8904,17 @@ button:hover:after {
   font-size: 30px;
   line-height: 28px;
   text-transform: uppercase;
+  color: #424242;
 }
-
+@media (max-width: 767px) {
+  .events h4 {
+    font-family: 'BlowBrush', sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #424242;
+  }
+}
 .sponsors-area-col3 .single {
   width: 32%;
 }
@@ -10208,6 +10217,7 @@ button:hover:after {
   -o-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
+  margin-top: -8%;
 }
 .lgx-testimonial .lgx-inner {
   background: rgba(255, 255, 255, 0.95);
@@ -10654,6 +10664,9 @@ blockquote.lgx-testi-single:before {
     p {
     font-size: 1.8rem;
     line-height: 2.7rem;
+  }
+  .lgx-footer-single .logo {
+    margin-top: -20px !important;
   }
 }
 @-webkit-keyframes wave {
@@ -11207,6 +11220,7 @@ blockquote.lgx-testi-single:before {
 }
 .lgx-footer-single .logo {
   display: block;
+  margin-top: -105px;
 }
 .lgx-footer-single address {
   margin-bottom: 1.5rem;
@@ -11335,8 +11349,15 @@ blockquote.lgx-testi-single:before {
 .lgx-page-inner {
   padding: 17rem 0 9rem;
 }
-.lgx-banner-inner {
-  background: url(../img/banner-inner2.jpg) center center no-repeat;
+.team-banner {
+  background: url('../img/team.jpg') center center no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+.about-banner {
+  background: url('../img/banner-inner2.jpg') center center no-repeat;
   -webkit-background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
