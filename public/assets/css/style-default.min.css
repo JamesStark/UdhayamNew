@@ -12003,6 +12003,14 @@ blockquote.lgx-testi-single:before {
   .lgx-registration-area .lgx-single-registration {
     width: 98%;
   }
+  .abt-img {
+    margin-top: -50px !important;
+    width: 100% !important;
+  }
+}
+.abt-img {
+  margin-top: -105px;
+  width: 100%;
 }
 @media (max-width: 480px) {
   .lgx-inner-countdown,
