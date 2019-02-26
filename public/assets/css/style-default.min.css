@@ -12007,6 +12007,11 @@ blockquote.lgx-testi-single:before {
     margin-top: -50px !important;
     width: 100% !important;
   }
+  .lgx-modal .modal-dialog .modal-content .modal-body iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+  }
 }
 .abt-img {
   margin-top: -105px;
