@@ -7,8 +7,13 @@ router.get('/', function(req, res, next) {
 });
 
 /* GET about page. */
-router.get('/about-us', function(req, res, next) {
-  res.render('about');
+// router.get('/about-us', function(req, res, next) {
+//   res.render('about');
+// });
+
+/* GET about page. */
+router.get('/events', function(req, res, next) {
+  res.render('events');
 });
 
 /* GET gellery page. */
