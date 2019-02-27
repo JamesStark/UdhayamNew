@@ -8832,11 +8832,20 @@ button:hover:after {
   -moz-background-size: cover;
   background-size: cover;
 }
+.lgx-sponsors2 {
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
 .lgx-sponsors .lgx-inner {
   background: rgba(255, 255, 255, 0.88);
 }
 .lgx-sponsors-black .lgx-inner {
   background: rgba(27, 39, 61, 0.95);
+}
+.lgx-sponsors-white .lgx-inner {
+  background: #fff;
 }
 .lgx-sponsors-christmas {
   background: 0 0;
@@ -8901,7 +8910,7 @@ button:hover:after {
 }
 .events h4 {
   font-family: 'BlowBrush', sans-serif;
-  font-size: 30px;
+  font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
   color: #424242;
@@ -8909,7 +8918,7 @@ button:hover:after {
 @media (max-width: 767px) {
   .events h4 {
     font-family: 'BlowBrush', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 28px;
     text-transform: uppercase;
     color: #424242;
@@ -11356,8 +11365,22 @@ blockquote.lgx-testi-single:before {
   -moz-background-size: cover;
   background-size: cover;
 }
+.team2-banner {
+  background: url('https://www.talktopaul.com/wp-content/uploads/2017/07/Why-Real-Estate-Agent-Should-Join-a-Team-TalkToPaul-Luxury-Real-Estate-Agent-2.jpg') center center no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
 .about-banner {
   background: url('../img/banner-inner2.jpg') center center no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+.contact-banner {
+  background: url('../img/contact-bg.jpg') center center no-repeat;
   -webkit-background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
@@ -11980,6 +12003,19 @@ blockquote.lgx-testi-single:before {
   .lgx-registration-area .lgx-single-registration {
     width: 98%;
   }
+  .abt-img {
+    margin-top: -50px !important;
+    width: 100% !important;
+  }
+  .lgx-modal .modal-dialog .modal-content .modal-body iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+  }
+}
+.abt-img {
+  margin-top: -105px;
+  width: 100%;
 }
 @media (max-width: 480px) {
   .lgx-inner-countdown,
