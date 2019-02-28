@@ -537,98 +537,98 @@
 
 
 
-        /*=========================================================================
-         ===  Start Contact Form Validation And Ajax Submission
-         ========================================================================== */
+        // /*=========================================================================
+        //  ===  Start Contact Form Validation And Ajax Submission
+        //  ========================================================================== */
 
-        var alertInterval;//store the timeout interval ID
+        // var alertInterval;//store the timeout interval ID
 
-        //clear interval for alert message window
-        $('#lgx-form-modal').on('hide.bs.modal', function (ev) {
-            clearInterval(alertInterval);
-        });
+        // //clear interval for alert message window
+        // $('#lgx-form-modal').on('hide.bs.modal', function (ev) {
+        //     clearInterval(alertInterval);
+        // });
 
-        var $contactForm = $('form.lgx-contactform');
-        $contactForm.validate({
-            submitHandler: function (form) {
-                //console.log(form);
-                var $form = $(form);
-                //console.log($form.serialize());
-                $.ajax({
-                    url: lgx_path + '/assets/php/contact.php',
-                    type: 'post',
-                    data: $form.serialize(),
-                    beforeSubmit: function (argument) {
-                        //ajax loading icon
-                    },
-                    success: function (ajaxResponse) {
-                        try {
-                            var ajaxResponse = $.parseJSON(ajaxResponse);
-                            if (ajaxResponse.error) {
-                                //for field error
-                                //console.log(ajaxResponse.error_field);
-                                for (var i = 0; i < ajaxResponse.error_field.length; i++) {
-                                    if ($('p#' + ajaxResponse.error_field[i] + '-error').length) {
-                                        $('p#' + ajaxResponse.error_field[i] + '-error').text(ajaxResponse.message[ajaxResponse.error_field[i]]);
-                                    } else {
-                                        $('#' + ajaxResponse.error_field[i]).after('<p id="' + ajaxResponse.error_field[i] + '-error" class="help-block">' + ajaxResponse.message[ajaxResponse.error_field[i]] + '</p>');
-                                    }
-                                }
+        // var $contactForm = $('form.lgx-contactform');
+        // $contactForm.validate({
+        //     submitHandler: function (form) {
+        //         //console.log(form);
+        //         var $form = $(form);
+        //         //console.log($form.serialize());
+        //         $.ajax({
+        //             url: lgx_path + '/contact',
+        //             type: 'post',
+        //             data: $form.serialize(),
+        //             beforeSubmit: function (argument) {
+        //                 //ajax loading icon
+        //             },
+        //             success: function (ajaxResponse) {
+        //                 try {
+        //                     var ajaxResponse = $.parseJSON(ajaxResponse);
+        //                     if (ajaxResponse.error) {
+        //                         //for field error
+        //                         //console.log(ajaxResponse.error_field);
+        //                         for (var i = 0; i < ajaxResponse.error_field.length; i++) {
+        //                             if ($('p#' + ajaxResponse.error_field[i] + '-error').length) {
+        //                                 $('p#' + ajaxResponse.error_field[i] + '-error').text(ajaxResponse.message[ajaxResponse.error_field[i]]);
+        //                             } else {
+        //                                 $('#' + ajaxResponse.error_field[i]).after('<p id="' + ajaxResponse.error_field[i] + '-error" class="help-block">' + ajaxResponse.message[ajaxResponse.error_field[i]] + '</p>');
+        //                             }
+        //                         }
 
-                            } else {
-                                $('.lgx-form-msg').removeClass('alert-danger').addClass('alert-success').text(ajaxResponse.message);
-                                $('#lgx-form-modal').modal('show');
-                                alertInterval = setInterval(function () {
-                                    $('#lgx-form-modal').modal('hide');
-                                }, 5000);
-                                $form[0].reset();
-                            }
-                        } catch (e) {
-                            $('.lgx-form-msg').removeClass('alert-success').addClass('alert-danger').text('Sorry, we are failed to contact with you. Please reload the page and try again.');
-                            $('#lgx-form-modal').modal('show');
-                            alertInterval = setInterval(function () {
-                                $('#lgx-form-modal').modal('hide');
-                            }, 5000);
-                        }
-                    },
-                    error: function (argument) {
-                        $('.lgx-form-msg').removeClass('alert-success').addClass('alert-danger').text('Sorry, we can not communicate with you. Please make sure you are connected with internet.');
-                        $('#lgx-form-modal').modal('show');
-                        alertInterval = setInterval(function () {
-                            $('#lgx-form-modal').modal('hide');
-                        }, 5000);
-                    },
-                    complete: function () {
+        //                     } else {
+        //                         $('.lgx-form-msg').removeClass('alert-danger').addClass('alert-success').text(ajaxResponse.message);
+        //                         $('#lgx-form-modal').modal('show');
+        //                         alertInterval = setInterval(function () {
+        //                             $('#lgx-form-modal').modal('hide');
+        //                         }, 5000);
+        //                         $form[0].reset();
+        //                     }
+        //                 } catch (e) {
+        //                     $('.lgx-form-msg').removeClass('alert-success').addClass('alert-danger').text('Sorry, we are failed to contact with you. Please reload the page and try again.');
+        //                     $('#lgx-form-modal').modal('show');
+        //                     alertInterval = setInterval(function () {
+        //                         $('#lgx-form-modal').modal('hide');
+        //                     }, 5000);
+        //                 }
+        //             },
+        //             error: function (argument) {
+        //                 $('.lgx-form-msg').removeClass('alert-success').addClass('alert-danger').text('Sorry, we can not communicate with you. Please make sure you are connected with internet.');
+        //                 $('#lgx-form-modal').modal('show');
+        //                 alertInterval = setInterval(function () {
+        //                     $('#lgx-form-modal').modal('hide');
+        //                 }, 5000);
+        //             },
+        //             complete: function () {
 
-                    }
-                });
+        //             }
+        //         });
 
-                return false;
-            },
-            errorElement: 'p',
-            errorClass: 'help-block',
-            rules: {
-                'lgxname': {
-                    required: true,
-                    minlength: 3
-                },
+        //         return false;
+        //     },
+        //     errorElement: 'p',
+        //     errorClass: 'help-block',
+        //     rules: {
+        //         'lgxname': {
+        //             required: true,
+        //             minlength: 3
+        //         },
 
-                'lgxemail': {
-                    required: true,
-                    email: true
-                },
+        //         'lgxemail': {
+        //             required: true,
+        //             email: true
+        //         },
 
-                'lgxsubject': {
-                    required: true,
-                    minlength: 5
-                },
+        //         'lgxsubject': {
+        //             required: true,
+        //             minlength: 5
+        //         },
 
-                'lgxmessage': {
-                    required: true,
-                    minlength: 5
-                }
-            }
-        });
+        //         'lgxmessage': {
+        //             required: true,
+        //             minlength: 5
+        //         }
+        //     }
+        // });
 
         /*=========================================================================
          ===  Start Contact Form Validation And Ajax Submission END
