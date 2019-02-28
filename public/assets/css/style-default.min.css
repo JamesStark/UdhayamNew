@@ -6574,7 +6574,7 @@ button:hover:after {
 .lgx-banner-info .title {
   margin: 0 0 2.6rem;
   font-family: 'Ubuntu', sans-serif;
-  font-size: 11rem;
+  font-size: 8rem;
   line-height: 16.5rem;
   line-height: 12rem;
   font-weight: 700;
@@ -6979,7 +6979,7 @@ button:hover:after {
     line-height: 4rem;
   }
   .lgx-banner-info .title {
-    font-size: 4.2rem;
+    font-size: 3.2rem;
     line-height: 6.300000000000001rem;
     line-height: 5rem;
     margin-bottom: 2rem;
