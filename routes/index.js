@@ -14,9 +14,9 @@ router.get("/", function (req, res, next) {
 });
 
 /* GET about page. */
-// router.get('/about-us', function(req, res, next) {
-//   res.render('about');
-// });
+router.get('/about-us', function(req, res, next) {
+  res.render('about');
+});
 
 /* GET about page. */
 router.get("/events", function (req, res, next) {
@@ -50,8 +50,13 @@ router.get("/event-coordinators", function (req, res, next) {
 });
 
 /* GET contact page. */
-router.get("/contact", function (req, res, next) {
-  res.render("contact");
+router.get('/event-register', function(req, res, next) {
+  res.render('register');
+});
+
+/* GET contact page. */
+router.get('/contact', function(req, res, next) {
+  res.render('contact');
 });
 
 router.post("/contact", function (req, res, next) {
