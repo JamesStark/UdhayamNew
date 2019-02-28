@@ -6584,6 +6584,13 @@ button:hover:after {
 .lgx-banner-info .date,
 .lgx-banner-info .location {
   font-family: 'Ubuntu', sans-serif;
+  font-size: 3.8rem;
+  line-height: 3.9000000000000004rem;
+  font-weight: 600;
+  margin: 0 0 0.3rem;
+}
+.lgx-banner-info .location2 {
+  font-family: 'Ubuntu', sans-serif;
   font-size: 2.6rem;
   line-height: 3.9000000000000004rem;
   font-weight: 300;
@@ -6611,7 +6618,8 @@ button:hover:after {
 .lgx-banner-info .date i {
   color: #efa506;
 }
-.lgx-banner-info .location {
+.lgx-banner-info .location,
+.lgx-banner-info .location2 {
   color: #fff;
 }
 .lgx-banner-info-circle .info-circle-inner .date span,
@@ -6933,7 +6941,7 @@ button:hover:after {
   }
   .lgx-banner-info .date,
   .lgx-banner-info .location {
-    font-size: 2rem;
+    font-size: 2.8rem;
     line-height: 3rem;
     line-height: 2.8rem;
   }
@@ -7885,6 +7893,13 @@ button:hover:after {
   font-weight: 400;
   opacity: 1;
 }
+.lgx-about-content-area .lgx-heading .subheading2 {
+  color: #ec398b;
+  font-size: 2.5rem;
+  line-height: 1rem;
+  font-weight: 400;
+  opacity: 1;
+}
 .lgx-single-speaker .speaker-info .subtitle,
 .lgx-single-speaker-circle .speaker-info .subtitle,
 .lgx-single-speaker2 .speaker-info .subtitle {
@@ -7938,6 +7953,9 @@ button:hover:after {
 .lgx-about-content-area-center .lgx-about-content .section-btn-area,
 .lgx-about-content-area-center .lgx-heading {
   text-align: center;
+}
+.lgx-about-content .text {
+  word-wrap: break-all;
 }
 .lgx-speakers2 {
   background: url(../img/speakers-bg-black.jpg) bottom left no-repeat fixed;
@@ -11952,6 +11970,11 @@ blockquote.lgx-testi-single:before {
     display: block;
   }
   .lgx-banner-info-date .location {
+    font-size: 2rem;
+    line-height: 3rem;
+    line-height: 3.5rem;
+  }
+  .lgx-banner-info-date .location2 {
     font-size: 2rem;
     line-height: 3rem;
     line-height: 3.5rem;
