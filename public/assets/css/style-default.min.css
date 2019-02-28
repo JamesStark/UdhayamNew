@@ -7955,7 +7955,7 @@ button:hover:after {
   text-align: center;
 }
 .lgx-about-content .text {
-  word-wrap: break-all;
+  word-wrap: break-word;
 }
 .lgx-speakers2 {
   background: url(../img/speakers-bg-black.jpg) bottom left no-repeat fixed;
