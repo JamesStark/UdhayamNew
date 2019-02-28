@@ -11397,6 +11397,13 @@ blockquote.lgx-testi-single:before {
   -moz-background-size: cover;
   background-size: cover;
 }
+.events-into-banner {
+  background: url('../img/banner-inner2.jpg') center center no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
 .kit-banner {
   background: url('../img/kit.jpg') center center no-repeat;
   -webkit-background-size: cover;
